@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 3 - Loja</title>
+</head>
+<body>
+    <script>
+        let valor = Number(prompt("Insira o valor do produto: "));
+        let formaPagamento = (prompt("Informe a forma de pagamento \n1- À vista \n2- Parcelado em 3x"));
+        if (formaPagamento == 1) {
+            let desconto = valor*0.10;
+            let aVista = valor - desconto;
+            let resultado = "Deverá pagar R$" + aVista;
+            alert(resultado);
+        } else {
+            let parcelado = valor / 3;
+            let resultado = "Deverá pagar 3x de R$" + parcelado;
+            alert(resultado);
+        }
+        console.log(resultado);
+    </script>
+</body>
+</html>
