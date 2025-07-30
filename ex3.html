@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 3 - Salário</title>
+    // 3 - Faça um programa em javascript para ler o salário de um 
+    funcionário e aumentá-Io em 15%. 
+    Após o aumento, desconte 8% de impostos. Exiba o salário inicial, 
+    o salário com o aumento e o salário final.
+
+</head>
+<body>
+    <script>
+        let salarioInicial = Number(prompt("Insira o seu atual salário: "));
+        let porcentoAumento = salarioInicial * 0.15;
+        let salarioAumento = porcentoAumento + salarioInicial;
+        let impostos = salarioAumento * 0.08;
+        let salarioFinal = salarioAumento - impostos;
+        let resultado = `O seu salário era de R$${salarioInicial}, com o aumento de 15% ficou R$${salarioAumento}, descontando os 8% de impostos, o seu salário final será de R$${salarioFinal}!`;
+        console.log(resultado);
+        alert(resultado);
+    </script>
+</body>
+</html>
