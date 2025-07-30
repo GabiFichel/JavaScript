@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 5 - Volume</title>
+    5 -  Elaborar um programa em javascript que calcule e 
+    apresente o valor do volume de uma caixaretangular, 
+    utilizando a fórmula 
+    
+    VOLUME <- COMPRIMENTO * LARGURA * ALTURA.
+</head>
+<body>
+    <script>
+        let altura = Number(prompt("Insira a altura da caixa: "));
+        let comprimento = Number(prompt("Insira o comprimento da caixa: "));
+        let largura = Number(prompt("Insira a largura da caixa: "));
+        let volume = comprimento * largura * altura;
+        let resultado = `O volume da caixa é ${volume}`;
+        console.log(resultado);
+        alert(resultado);
+    </script>
+</body>
+</html>
