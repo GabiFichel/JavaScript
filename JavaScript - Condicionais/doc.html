@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercício 14</title>
+</head>
+<body>
+<script>
+    let idade = Number(prompt("Digite sua idade: "));
+    let temDocumento = prompt("Você tem documento? (sim/não): ").toLowerCase();
+    let resultado = "";
+
+    if (idade >= 18 && temDocumento === "sim") {
+        resultado = "Acesso permitido";
+    } else {
+        resultado = "Acesso negado";
+    }
+
+    document.write(resultado);
+    console.log(resultado);
+</script>
+</body>
+</html>

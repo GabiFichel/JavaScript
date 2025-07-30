@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercício 15</title>
+</head>
+<body>
+<script>
+    let idade = Number(prompt("Digite sua idade: "));
+    let resultado = "";
+
+    if (idade < 12) {
+        resultado = "Desconto para criança";
+    } else if (idade >= 60) {
+        resultado = "Desconto para idoso";
+    } else {
+        resultado = "Sem desconto";
+    }
+
+    document.write(resultado);
+    console.log(resultado);
+</script>
+</body>
+</html>

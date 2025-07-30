@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercício 13</title>
+</head>
+<body>
+<script>
+    let ano = Number(prompt("Digite um ano: "));
+    let resultado = "";
+    if ((ano % 4 === 0 && ano % 100 !== 0) || (ano % 400 === 0)) {
+        resultado = "Ano bissexto";
+    } else {
+        resultado = "Não é bissexto";
+    }
+    document.write(resultado);
+    console.log(resultado);
+</script>
+</body>
+</html>

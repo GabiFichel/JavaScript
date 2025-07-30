@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 5 - Nota</title>
+</head>
+<body>
+    <script>
+        let nota = Number(prompt("Registre sua nota (0 a 10): "));
+
+        if (nota >= 7 && nota <= 10) {
+            document.write("Aprovado!");
+        } else if (nota >= 5 && nota < 7) {
+            document.write("Recuperação!");
+        } else if (nota >= 0 && nota < 5) {
+            document.write("Reprovado!");
+        } else {
+            document.write("Nota inválida.");
+        }
+    </script>
+</body>
+</html> 
